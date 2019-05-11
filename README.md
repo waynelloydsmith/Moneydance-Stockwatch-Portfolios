@@ -1,0 +1,24 @@
+## Moneydance-Stockwatch-Portfolios tested on MD2019
+- loads current stockwatch security prices from 4 of your portfolios into moneydance
+- you also need runScripts-share.py and definitions.py from the Moneydance-Stockwatch-dayly repository
+- you must have a stockwatch account and preconfigured portfolios. Handles Canadian and US stocks plus
+- canadian mutual funds.
+- to execute these scripts put them all in /opt/moneydance/scripts then execute
+- runScripts-shared.py .. run this script with moneydance->window->"Show MoneyBot Console"
+- runScripts-shared.py can run many different scripts via its tree menu system.
+- open the "Run Stockwatch Update Scripts" folder.
+- select updatePortfolioStockWatch.py.
+- hit the "Run Script Button" at the bottom.
+- You can also execute these scripts directly without using runScripts-shared.py
+- definitions.StockwatchSymbols is used to convert the Canadian mutual fund symbols to what ever you
+- are useing in moneydance like 'BIF*CDN' -> TML202-T (Franklin Bissett Canadian Equity Fund)
+- see line 147 in updatePortfolioStockWatch2Moneydance.py for other ticker symbol conversions like AW.UN -> AW-UN-T
+- fetch-Stockwatch-ID.py is used to get the stockwatch ID cookie from seamonkey so you must be 
+- logged in with seamonkey to Stockwatch when you run these scripts. 
+- if you do not use seamonkey you can change the code to send your userID and password directly in the quiry.
+- Firefox and Seamoney are close relatives so changing the code to suit Firefox should be easily done.
+- Directory structure required to run the stockwatch scripts
+- /opt/monedance/scripts/tmp/Stockwatch
+- /opt/monedance/scripts/tmp/DOne
+- /opt/monedance/scripts/tmp/StockwatchDay
+- /opt/monedance/scripts/tmp/StockwatchPortfolio
