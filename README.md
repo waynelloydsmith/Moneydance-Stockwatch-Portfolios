@@ -19,6 +19,6 @@
 - Firefox and Seamoney are close relatives so changing the code to suit Firefox should be easily done.
 - Directory structure required to run the stockwatch scripts
 - /opt/monedance/scripts/tmp/Stockwatch
-- /opt/monedance/scripts/tmp/DOne
+- /opt/monedance/scripts/tmp/Done
 - /opt/monedance/scripts/tmp/StockwatchDay
 - /opt/monedance/scripts/tmp/StockwatchPortfolio
